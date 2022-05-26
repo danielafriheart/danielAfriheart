@@ -114,6 +114,9 @@ section {
 }
 
 @media (min-width:320px) and (max-width: 612px) {
+    .cursor{
+        display: none !important;
+    }
     .content {
         margin-top: -5em;
     }
