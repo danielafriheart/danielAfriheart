@@ -121,4 +121,7 @@ section {
     .iconz {
         width: 50% !important;
     }
+    .words{
+        width: 100% !important;
+    }
 }
