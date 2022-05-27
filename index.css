@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     cursor: none !important;
+    scroll-behavior: smooth;
     /* border: 1px solid gold; */
 }
 
