@@ -6,3 +6,13 @@
 .mouseIcon:hover {
     font-weight: bold;
 }
+
+@media (min-width:320px) and (max-width: 612px) {
+    .iconzz {
+        width: 90% !important;
+    }
+
+    .iconz {
+        width: 30% !important;
+    }
+}

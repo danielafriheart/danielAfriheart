@@ -1,5 +1,4 @@
 * {
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
     cursor: none !important;
     /* border: 1px solid gold; */
@@ -38,7 +37,7 @@
 
 .cursor.click::before {
     animation: click 1s ease forwards;
-    background-color:rgba(125, 124, 124, 0.514);
+    background-color: rgba(125, 124, 124, 0.514);
 }
 
 @keyframes click {
@@ -56,9 +55,11 @@
 body {
     background-color: #fff;
 }
-textarea{
-    outline: 1px solid #fefe;
+
+textarea {
+    outline: none;
 }
+
 .btn:hover {
     background-color: transparent;
     color: #000;
@@ -114,17 +115,22 @@ section {
 }
 
 @media (min-width:320px) and (max-width: 612px) {
-    .cursor{
+    .cursor {
         display: none !important;
     }
+
     .content {
         margin-top: -5em;
     }
 
     .iconz {
-        width: 50% !important;
+        width: 30% !important;
     }
-    .words{
+
+    .words {
         width: 100% !important;
+    }
+    .socials{
+        width: 50% !important;
     }
 }
