@@ -4,7 +4,9 @@
     scroll-behavior: smooth;
     /* border: 1px solid gold; */
 }
-
+.quoteLink:hover{
+    color: white !important;
+}
 .cursor {
     z-index: 100;
     position: absolute;
