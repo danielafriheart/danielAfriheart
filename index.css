@@ -7,6 +7,9 @@
 .quoteLink:hover{
     color: white !important;
 }
+/* .hero{
+    z-index: 20;
+} */
 .top{
     z-index: 1;
 }
@@ -60,6 +63,9 @@
 
 body {
     background-color: #fff;
+}
+::placeholder{
+    color: lightgray !important;
 }
 
 textarea {
