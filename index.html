@@ -134,11 +134,10 @@
         <div class="container px-md-5 px-0">
             <div class="container ">
                 <div class="px-md-5 px-0 row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <h3 class="fw-bolder">About Me</h3>
                         <p class="fs-5 lh-lg">My name is Esuola Daniel, i'm a Product Designer and a FrontEnd Developer.
-                            I design interactive human experiences that excites you and your customers, I deliver strong
-                            results.
+                            I design interactive human experiences that excites you and your customers.
                         </p>
                     </div>
                     <div class="col d-none d-md-flex ">
@@ -416,7 +415,7 @@
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="container-fluid px-md-5 py-5 mb-md-5" id="quote">
+    <div class="container-fluid px-md-5 py-5 mb-md-5 bg-light" id="quote">
         <div class="container px-md-5">
             <div class="row ps-md-5 gap-5">
                 <div class="col-md-3 ps-md-4">
@@ -438,29 +437,29 @@
                 <div class="col-md-8 ps-md-5">
                     <form class="">
                         <div class="mb-3">
-                            <input type="text" class="form-control bg-light border-0" id="fName"
-                                aria-describedby="emailHelp" placeholder="First Name" required>
+                            <input type="text" class="form-control border-0" id="fName" aria-describedby="emailHelp"
+                                placeholder="First Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control bg-light border-0" id="lName"
-                                aria-describedby="emailHelp" placeholder="Last Name" required>
+                            <input type="text" class="form-control border-0" id="lName" aria-describedby="emailHelp"
+                                placeholder="Last Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control bg-light border-0" id="senderEmail"
+                            <input type="email" class="form-control border-0" id="senderEmail"
                                 placeholder="Your email address" required>
                         </div>
-                        <select class="form-select mb-3 bg-light border-0" aria-label="Default select example"
-                            id="mailSubject" required>
+                        <select class="form-select mb-3 border-0" aria-label="Default select example" id="mailSubject"
+                            required>
                             <option selected>- - -</option>
                             <option value="Branding">Branding</option>
                             <option value="Web Development">Web Development</option>
                         </select>
                         <div class="">
-                            <textarea name="" id="message" placeholder="Message"
-                                class="w-100 p-3 border-0 bg-light" required></textarea>
+                            <textarea name="" id="message" placeholder="Message" class="w-100 p-3 border-0"
+                                required></textarea>
                         </div>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary" onclick="sendEmail()">Submit</button>
+                            <button type="submit" class="btn btn-primary mt-3" onclick="sendEmail()">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -500,7 +499,7 @@
         sendEmail = () => {
             let sender = {
                 fullName: fName.value + " " + lName.value,
-                email: senderEmail.value,
+                email: senderEmail.value
             };
             if (fName.value && lName.value && senderEmail && mailSubject.value) {
                 Email.send({
@@ -508,14 +507,17 @@
                     To: 'designsbydanielafriheart@gmail.com',
                     From: "designsbydanielafriheart@gmail.com",
                     Subject: sender.fullName + "- " + mailSubject.value,
-                    Body: message.value + "<br> From: " +"<strong>"+ sender.fullName + "<br>" + sender.email +"</strong>"
+                    Body: message.value + "<br> From: " + "<strong>" + sender.fullName + "<br>" + sender.email + "</strong>"
                 }).then(
-                    message => alert(message),
+                    message => alert(message)
                 );
             } else {
                 alert('Please fill required sections');
             }
         };
+        // fresh = () => {
+        // window.location.reload("/index.html")
+        // }
     </script>
     <!-- CURSOR -->
     <script src="script.js"></script>
