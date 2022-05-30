@@ -24,7 +24,7 @@
 
 <body>
     <div class="cursor"></div>
-    
+
     <!-- HERO -->
     <section class="container-fluid"
         style="background-image: url(/img/bg1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
@@ -50,12 +50,14 @@
                                 Resources
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf" target="_blank">Resume</a></li>
+                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf"
+                                        target="_blank">Resume</a></li>
                             </ul>
                         </li>
                     </ul>
                     <form class="d-flex nav-item">
-                        <a href="#quote" class="nav-link rounded-pill px-3 quoteLink" style="color: lightgray; border: 1px solid;">Get Quote</a>
+                        <a href="#quote" class="nav-link rounded-pill px-3 quoteLink"
+                            style="color: lightgray; border: 1px solid;">Get Quote</a>
                     </form>
                 </div>
             </div>
@@ -85,7 +87,47 @@
                 </div>
             </div>
         </div>
+
     </section>
+
+    <!-- Sticky Navbar -->
+    <div class="container-fluid sticky-top d-none">
+        <nav class="navbar navbar-expand-lg text-light navbar-light  bg-light shadow shadow-sm px-md-5">
+            <div class="container-fluid mx-md-5 px-md-5">
+                <a class="navbar-brand fw-bold" href="#">DanielAfriheart</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf"
+                                        target="_blank">Resume</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex nav-item">
+                        <a href="#quote" class="nav-link rounded-pill px-3 quoteLink"
+                            style="color: lightgray; border: 1px solid;">Get Quote</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- ABOUT ME -->
     <div class=" d-flex justify-content-center flex-column align-items-center my-md-5 pt-5 container-fluid" id="about">
@@ -394,30 +436,31 @@
                     </div>
                 </div>
                 <div class="col-md-8 ps-md-5">
-                    <form class="">
+                    <form class="" action="">
                         <div class="mb-3">
-                            <input type="text" class="form-control bg-light border-0" id="" aria-describedby="emailHelp"
-                                placeholder="First Name">
+                            <input type="text" class="form-control bg-light border-0" id="fName"
+                                aria-describedby="emailHelp" placeholder="First Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control bg-light border-0" id="" aria-describedby="emailHelp"
-                                placeholder="Last Name">
+                            <input type="text" class="form-control bg-light border-0" id="lName"
+                                aria-describedby="emailHelp" placeholder="Last Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control bg-light border-0" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Your email address">
+                            <input type="email" class="form-control bg-light border-0" id="senderEmail"
+                                placeholder="Your email address" required>
                         </div>
-                        <select class="form-select mb-3 bg-light border-0" aria-label="Default select example">
+                        <select class="form-select mb-3 bg-light border-0" aria-label="Default select example"
+                            id="mailSubject" required>
                             <option selected>- - -</option>
-                            <option value="1">Branding</option>
-                            <option value="2">Web Development</option>
+                            <option value="Branding">Branding</option>
+                            <option value="Web Development">Web Development</option>
                         </select>
                         <div class="">
-                            <textarea name="" id="" placeholder="Message"
-                                class="w-100 p-3 border-0 bg-light"></textarea>
+                            <textarea name="" id="message" placeholder="Message"
+                                class="w-100 p-3 border-0 bg-light" required></textarea>
                         </div>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" onclick="sendEmail()">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -435,7 +478,8 @@
         </header>
         <div class="text-center">
             <div class="w-25 fs-2 d-flex justify-content-between socialsLinks gap-3 my-3 mx-auto">
-                <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i class="uil uil-twitter-alt"></i></a>
+                <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
+                        class="uil uil-twitter-alt"></i></a>
                 <a href="https://www.instagram.com/danielafriheart/" target="_blank" class=""><i
                         class="uil uil-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/daniel-esuola/" target="_blank" class=""><i
@@ -450,6 +494,29 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        sendEmail = () => {
+            let sender = {
+                fullName: fName.value + " " + lName.value,
+                email: senderEmail.value,
+            };
+            if (fName.value && lName.value && senderEmail && mailSubject.value) {
+                Email.send({
+                    SecureToken: "7bccf054-a3dc-4f3b-b348-949365863da1",
+                    To: 'designsbydanielafriheart@gmail.com',
+                    From: "designsbydanielafriheart@gmail.com",
+                    Subject: sender.fullName + "- " + mailSubject.value,
+                    Body: message.value + "<br> From: " +"<strong>"+ sender.fullName + "<br>" + sender.email +"</strong>"
+                }).then(
+                    message => alert(message),
+                );
+            } else {
+                alert('Please fill required sections');
+            }
+        };
+    </script>
     <!-- CURSOR -->
     <script src="script.js"></script>
 </body>
