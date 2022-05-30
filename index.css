@@ -7,6 +7,9 @@
 .quoteLink:hover{
     color: white !important;
 }
+.top{
+    z-index: 1;
+}
 .cursor {
     z-index: 100;
     position: absolute;

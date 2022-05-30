@@ -26,7 +26,7 @@
     <div class="cursor"></div>
 
     <!-- HERO -->
-    <section class="container-fluid"
+    <section class="container-fluid" id="home"
         style="background-image: url(/img/bg1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
         <nav class="navbar navbar-expand-lg text-light navbar-dark px-md-5">
             <div class="container-fluid mx-md-5 px-md-5">
@@ -67,7 +67,13 @@
             <div class="container text-light">
                 <div class="row">
                     <div class="col d-flex align-items-center justify-content-center">
-                        <img src="img/memoji.png" alt="" class="img-fluid">
+                        <img src="img/memoji.png" alt="" class="img-fluid" onmouseover="show()"
+                            onmouseleave="closeImg()">
+
+                        <img src="/img/scribbles/circle1.png" alt=""
+                            class="img-fluid position-absolute top-20 end-20 d-none" id="circle"
+                            style="width: 30%; height: 60%;">
+
                     </div>
                     <div class="col-md-7">
                         <h4 class=" fw-bold" style="color: #8B8CB3;">Product Designer</h4>
@@ -89,7 +95,6 @@
         </div>
 
     </section>
-
     <!-- Sticky Navbar -->
     <div class="container-fluid sticky-top d-none">
         <nav class="navbar navbar-expand-lg text-light navbar-light  bg-light shadow shadow-sm px-md-5">
@@ -173,7 +178,7 @@
     <div class="text-dark d-flex flex-column justify-content-center py-5 my-md-5 align-items-center">
         <div class="container px-md-5 px-4">
             <div class="mb-3 text-center px-md-5 text-md-start">
-                <h3 class="fw-bold text-start">From big to small clients, <br> two things I always promise:</h3>
+                <h3 class="fw-bold text-start">Two things I always promise:</h3>
             </div>
             <div class="row gap-md-5 px-md-5">
                 <div class="col-md-6 py-md-3 mb-5 mb-md-0">
@@ -183,7 +188,7 @@
                     </header>
                     <p class="lead lh-lg">This is what I love to do, so I’ll make sure you are happy with the results.
                         We’ll work as a team and we’ll get there!</p>
-                    <a href="" target="_blank" class="btn btn-dark rounded-pill px-5 shadow">Get Quote</a>
+                    <a href="#quote" target="" class="btn btn-dark rounded-pill px-5 shadow">Get Quote</a>
                 </div>
                 <div class="col py-md-3">
                     <header class="d-flex align-items-center">
@@ -195,6 +200,15 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <div class="fixed-bottom text-end top">
+        <a href="#home">
+            <div class="container py-4 pe-4 pe-md-0">
+                <i class="uil uil-angle-up fs-2 bg-light shadow rounded-pill"></i>
+            </div>
+        </a>
     </div>
 
     <!-- QUOTES -->
@@ -421,8 +435,8 @@
                 <div class="col-md-3 ps-md-4">
                     <p class="fw-bold" style="color: #8B8CB3;">LET’S MAKE IT HAPPEN</p>
                     <h2 class="fw-bold">Let's create the future!</h2>
-                    <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, iusto fugiat
-                        molestiae aperiam incidunt dolore.</p>
+                    <p class="py-2 lh-lg">We’re available for commissions and collaborations, and I’m excited to hear
+                        from you about new projects.</p>
                     <div class="w-50 fs-4 justify-content-between d-flex socialsLinks">
                         <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
                                 class="uil uil-twitter-alt"></i></a>
@@ -468,7 +482,7 @@
     </div>
 
     <!-- FOOTER-->
-    <footer class="container-fluid text-dark text-md-center px-3 px-md-0 pb-5">
+    <footer class="container-fluid text-dark text-md-center px-3 px-md-0 py-5">
         <header class="container">
             <h1 class="fw-bolder display-1">That's it! Now it's</h1>
             <h1 class="fw-bolder display-1">your turn to say Hi.</h1>
@@ -515,10 +529,14 @@
                 alert('Please fill required sections');
             }
         };
-        // fresh = () => {
-        // window.location.reload("/index.html")
-        // }
+        show = () => {
+            circle.style.display = "flex";
+        }
+        closeImg = () => {
+            circle.style.display = "none";
+        }
     </script>
+
     <!-- CURSOR -->
     <script src="script.js"></script>
 </body>
