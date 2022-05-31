@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,7 +24,7 @@
     <!-- IconScout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/img/DanielAfriheartFavicon.png">
+    <link rel="icon" type="image/x-icon" href="/img/memoji.png">
     <!-- Animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DanielAfriheart</title>
@@ -29,20 +37,18 @@
     <section class="container-fluid hero" id="home"
         style="background-image: url(/img/bg1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
         <nav class="navbar navbar-expand-lg text-light navbar-dark px-md-5">
-            <div class="container-fluid mx-md-5 px-md-5">
-                <a class="navbar-brand fw-bold" href="#">DanielAfriheart</a>
+            <div class="container mx-md-5 px-md-5">
+                <a class="navbar-brand fw-bold nav-link nav-item" href="#">DanielAfriheart</a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li> -->
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 px-3 px-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#about">About</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#quote">Contact</a>
@@ -58,10 +64,10 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex nav-item">
+                    <!-- <form class="d-flex nav-item">
                         <a href="#quote" class="nav-link rounded-pill px-3 quoteLink"
                             style="color: lightgray; border: 1px solid;">Get Quote</a>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -76,7 +82,8 @@
                     </div>
                     <div class="col-md-7">
                         <h4 class=" fw-bold" style="color: #8B8CB3;">Product Designer</h4>
-                        <h1 class="fw-bolder display-1">Hello there, I’m <strong>Esuola Daniel</strong>, glad to see you
+                        <h1 class="fw-bolder display-1">Hello there, I’m <strong class="">Esuola Daniel</strong>, glad
+                            to see you
                             here.</h1>
                         <div class="w-25 fs-4 justify-content-between d-flex socials">
                             <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
@@ -95,45 +102,6 @@
 
     </section>
 
-    <!-- Sticky Navbar -->
-    <div class="container-fluid sticky-top d-none">
-        <nav class="navbar navbar-expand-lg text-light navbar-light  bg-light shadow shadow-sm px-md-5">
-            <div class="container-fluid mx-md-5 px-md-5">
-                <a class="navbar-brand fw-bold" href="#">DanielAfriheart</a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf"
-                                        target="_blank">Resume</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex nav-item">
-                        <a href="#quote" class="nav-link rounded-pill px-3 quoteLink"
-                            style="color: lightgray; border: 1px solid;">Get Quote</a>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </div>
-
     <!-- ABOUT ME -->
     <div class=" d-flex justify-content-center flex-column align-items-center my-md-5 pt-5 container-fluid" id="about">
         <div class="container px-md-5 px-0">
@@ -141,7 +109,7 @@
                 <div class="px-md-5 px-0 row">
                     <div class="col-md-7">
                         <h3 class="fw-bolder">About Me</h3>
-                        <p class="fs-5 lh-lg">My name is Esuola Daniel, i'm a Product Designer and a FrontEnd Developer.
+                        <p class="fs-5 lh-lg lead">My name is Esuola Daniel, i'm a Product Designer and a FrontEnd Developer.
                             I design interactive human experiences that excites you and your customers.
                         </p>
                     </div>
@@ -150,24 +118,24 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid my-md-5">
+        <div class="container-fluid my-md-5 pt-md-3">
             <div class="container px-md-5 px-0">
                 <div class="row create text-center mx-md-5">
                     <div class="col-6 col-md-3">
                         <img src="/img/scribbles/setting.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="">CREATE</p>
+                        <p class="mt-3 text-muted">CREATE</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <img src="/img/scribbles/image.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="">DESIGN</p>
+                        <p class="mt-3 text-muted">DESIGN</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <img src="/img/scribbles/puzzle.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="">DEVELOP</p>
+                        <p class="mt-3 text-muted">DEVELOP</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <img src="/img/scribbles/rocket.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="">INNOVATE</p>
+                        <p class="mt-3 text-muted">INNOVATE</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +146,7 @@
     <div class="text-dark d-flex flex-column justify-content-center py-5 my-md-5 align-items-center">
         <div class="container px-md-5 px-4">
             <div class="mb-3 text-center px-md-5 text-md-start">
-                <h3 class="fw-bold text-start">Two things I always promise:</h3>
+                <h3 class="fw-bold text-start">Two things I promise:</h3>
             </div>
             <div class="row gap-md-5 px-md-5">
                 <div class="col-md-6 py-md-3 mb-5 mb-md-0">
@@ -188,7 +156,9 @@
                     </header>
                     <p class="lead lh-lg">This is what I love to do, so I’ll make sure you are happy with the results.
                         We’ll work as a team and we’ll get there!</p>
-                    <a href="#quote" target="" class="btn btn-dark rounded-pill px-5 shadow">Get Quote</a>
+                    <div class="py-3">
+                        <a href="#quote" target="" class="btn rounded-pill px-5 shadow">Get a Quote</a>
+                    </div>
                 </div>
                 <div class="col py-md-3">
                     <header class="d-flex align-items-center">
@@ -252,7 +222,7 @@
         </div> -->
 
     <!-- LESS TALK MORE DESIGNS -->
-    <div class="container-fluid px-md-5 mt-md-5 py-md-5" id="designs">
+    <div class="container-fluid px-md-5 my-md-5 py-md-5" id="designs">
         <div class="row ps-md-5">
             <div class="container ps-md-4 col-md-8">
                 <header class="container d-flex flex-column ps-md-5">
@@ -400,9 +370,8 @@
                         <img src="/img/scribbles/figma.jpg" alt="" class="img-fluid" style="width: 15%;">
                         <img src="/img/scribbles/photoshop.jpg" alt="" class="img-fluid" style="width: 15%;">
                     </div>
-                    <h3 class="card-title fw-bold">Designing your digital product</h3>
-                    <p class="card-text py-3 lh-lg">From product design to strategy, design system, UI or UX, I
-                        solve complex problems though design, so you can achieve your business goals.</p>
+                    <h3 class="card-title fw-bold">UI/UX</h3>
+                    <p class="card-text py-3 lh-lg">Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App</p>
                 </div>
             </div>
             <div class="card text-start col-md-3 border border-light">
@@ -410,9 +379,8 @@
                     <div class="py-4">
                         <img src="/img/scribbles/webdev.jpg" alt="" class="img-fluid" style="width: 30%;">
                     </div>
-                    <h3 class="card-title fw-bold">Building a custom responsive website</h3>
-                    <p class="card-text py-3 lh-lg">From product design to strategy, design system, UI or UX, I
-                        solve complex problems though design, so you can achieve your business goals.</p>
+                    <h3 class="card-title fw-bold">Development</h3>
+                    <p class="card-text py-3 lh-lg">HTML/CSS, JavaScript Animation, WordPress, Responsive Website</p>
                 </div>
             </div>
             <div class="card text-start col-md-3 border border-light ">
@@ -420,9 +388,8 @@
                     <div class="py-5">
                         <img src="/img/scribbles/des.png" alt="" class="img-fluid" style="width: 15%;">
                     </div>
-                    <h3 class="card-title fw-bold">Giving a boost to your brand</h3>
-                    <p class="card-text py-3 lh-lg">From product design to strategy, design system, UI or UX, I solve
-                        complex problems though design, so you can achieve your business goals.</p>
+                    <h3 class="card-title fw-bold">Branding</h3>
+                    <p class="card-text py-3 lh-lg">Visual Identity, Stationary Kit, Marketing Materials</p>
                 </div>
             </div>
         </div>
@@ -430,7 +397,8 @@
 
     <!-- CONTACT FORM -->
     <div class="container-fluid px-md-5 py-5 mb-md-5 bg-light" id="quote">
-        <div class="container px-md-5">
+        <!-- <img src="/img/contact-modal-illustration.png" alt="" class="img-fluid position-absolute" style="width: 20%;"> -->
+        <div class="container px-md-5 pt-md-5">
             <div class="row ps-md-5 gap-5">
                 <div class="col-md-3 ps-md-4">
                     <p class="fw-bold" style="color: #8B8CB3;">LET’S MAKE IT HAPPEN</p>
@@ -473,7 +441,8 @@
                                 required></textarea>
                         </div>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary mt-3" onclick="sendEmail()">Submit</button>
+                            <button type="submit" class="btn btn2 btn-primary mt-3 px-5 rounded-pill"
+                                onclick="sendEmail()">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -525,7 +494,7 @@
                 }).then(
                     message => alert(message)
                 );
-            } 
+            }
             // else {
             //     alert('Please fill required sections');
             // }

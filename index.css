@@ -4,6 +4,35 @@
     scroll-behavior: smooth !important;
     /* border: 1px solid gold; */
 }
+.fw-bold{
+    font-weight: 900 !important;
+    font-family: 'Roboto', sans-serif !important;
+
+}
+p, nav{
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+.hero{
+    position: relative;
+    z-index: 2;
+}
+/* .collapse{
+    justify-content: end;
+} */
+.btn{
+    padding: 0.7em;
+    color: white !important;
+    background-image:  linear-gradient(135deg,#8254e5,#83afe3 150%);;
+    border: none;
+}
+.btn2{
+    background-image: linear-gradient(135deg,#72e9f3 -20%,#404de6 120%);
+}
+.btn:hover{
+    font-weight: bold !important;
+    color: white !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
 .quoteLink:hover{
     color: white !important;
 }

@@ -2,7 +2,12 @@
     /* border: 1px solid gold; */
     font-family: 'Montserrat', sans-serif;
 }
-
+.fw-bold{
+    font-weight: 900 !important;
+}
+p, li{
+    font-family: 'Libre Franklin', sans-serif !important;
+}
 .mouseIcon:hover {
     font-weight: bold;
 }
