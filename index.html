@@ -44,6 +44,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#about">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quote">Contact</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -201,11 +204,11 @@
 
     <!-- Scroll to top -->
     <div class="fixed-bottom text-end top">
-        <a href="#home">
-            <div class="container py-4 pe-4 pe-md-0">
-                <i class="uil uil-angle-up fs-2 bg-light shadow rounded-pill"></i>
-            </div>
-        </a>
+        <div class="container pb-4 pe-4 pe-md-0">
+            <a href="#home" id="toTop">
+                <i class="uil uil-angle-up fs-2 bg-light shadow rounded-pill topBtn"></i>
+            </a>
+        </div>
     </div>
 
     <!-- QUOTES -->
@@ -249,7 +252,7 @@
         </div> -->
 
     <!-- LESS TALK MORE DESIGNS -->
-    <div class="container-fluid px-md-5 mt-md-5 pt-md-5" id="designs">
+    <div class="container-fluid px-md-5 mt-md-5 py-md-5" id="designs">
         <div class="row ps-md-5">
             <div class="container ps-md-4 col-md-8">
                 <header class="container d-flex flex-column ps-md-5">
@@ -384,7 +387,7 @@
     </div>
 
     <!-- WAYS I CAN HELP -->
-    <div class="container-fluid justify-content-center d-flex flex-column my-md-5 pt-5">
+    <!-- <div class="container-fluid justify-content-center d-flex flex-column my-md-5 pt-5">
         <header class="container px-md-5">
             <div class="px-md-5">
                 <h3 class="fw-bolder px-md-3">Ways I can help you.</h3>
@@ -423,7 +426,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- CONTACT FORM -->
     <div class="container-fluid px-md-5 py-5 mb-md-5 bg-light" id="quote">
@@ -512,7 +515,7 @@
                 fullName: fName.value + " " + lName.value,
                 email: senderEmail.value
             };
-            if (fName.value && lName.value && senderEmail && mailSubject.value) {
+            if (fName.value && lName.value && senderEmail && mailSubject.value && message.value) {
                 Email.send({
                     SecureToken: "7bccf054-a3dc-4f3b-b348-949365863da1",
                     To: 'designsbydanielafriheart@gmail.com',
@@ -522,16 +525,17 @@
                 }).then(
                     message => alert(message)
                 );
-            } else {
-                alert('Please fill required sections');
-            }
+            } 
+            // else {
+            //     alert('Please fill required sections');
+            // }
         };
-        show = () => {
-            circle.style.display = "flex";
-        }
-        closeImg = () => {
-            circle.style.display = "none";
-        }
+        // show = () => {
+        //     circle.style.display = "flex";
+        // }
+        // closeImg = () => {
+        //     circle.style.display = "none";
+        // }
     </script>
 
     <!-- CURSOR -->

@@ -1,18 +1,28 @@
 * {
     font-family: 'Roboto', sans-serif;
     cursor: none !important;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     /* border: 1px solid gold; */
 }
 .quoteLink:hover{
     color: white !important;
 }
+/* .nav2{
+    background-color: white;
+    z-index: -1;
+} */
 /* .hero{
     z-index: 20;
 } */
 .top{
     z-index: 1;
 }
+#toTop:hover{
+    transform: translateZ(20);
+    transform: scale(5%) !important;
+    transition: 0.5s all ease-in-out !important;
+}
+
 .cursor {
     z-index: 100;
     position: absolute;
