@@ -2,7 +2,6 @@
     font-family: 'Roboto', sans-serif;
     cursor: none !important;
     scroll-behavior: smooth !important;
-    /* border: 1px solid gold; */
 }
 
 .brands {
@@ -28,8 +27,7 @@ nav {
 .btn {
     padding: 0.7em;
     color: white !important;
-    background-image: linear-gradient(135deg, #8254e5, #83afe3 150%);
-    ;
+    background-image: linear-gradient(135deg, #8254e5, #83afe3 100%);
     border: none;
 }
 
@@ -49,12 +47,6 @@ nav {
 
 .top {
     z-index: 1;
-}
-
-#toTop:hover {
-    transform: translateZ(20);
-    transform: scale(5%) !important;
-    transition: 0.5s all ease-in-out !important;
 }
 
 .cursor {
