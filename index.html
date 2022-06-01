@@ -437,14 +437,13 @@
 
     <!-- CONTACT FORM -->
     <div class="container-fluid px-md-5 py-5 mb-md-5 bg-light" id="quote">
-        <!-- <img src="/img/contact-modal-illustration.png" alt="" class="img-fluid position-absolute" style="width: 20%;"> -->
         <div class="container px-md-5 pt-md-5">
             <div class="row ps-md-5 gap-5">
                 <div class="col-md-3 ps-md-4">
                     <p class="fw-bold" style="color: #8B8CB3;">LET’S MAKE IT HAPPEN</p>
                     <h2 class="fw-bold">Let's create the future!</h2>
-                    <p class="py-2 lh-lg">We’re available for commissions and collaborations, and I’m excited to hear
-                        from you about new projects.</p>
+                    <p class="py-2 lh-lg">I'm available for commissions or collaborations, and I’m excited to hear from
+                        you about new projects.</p>
                     <div class="w-50 fs-4 justify-content-between d-flex socialsLinks">
                         <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
                                 class="uil uil-twitter-alt"></i></a>
@@ -511,6 +510,13 @@
         </div>
     </footer>
 
+    <!-- &copy -->
+    <!-- <div class="container-fluid align-items-center">
+        <div class="container text-center align-items-center">
+            <p class="text-muted">&copy Designsbydanielafriheart</p>
+        </div>
+    </div> -->
+
     <!-- Js for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -530,21 +536,12 @@
                     To: 'designsbydanielafriheart@gmail.com',
                     From: "designsbydanielafriheart@gmail.com",
                     Subject: sender.fullName + "- " + mailSubject.value,
-                    Body: message.value + "<br> From: " + "<strong>" + sender.fullName + "<br>" + sender.email + "</strong>"
+                    Body: message.value + "<br> From: <br>" + "<strong>" + sender.fullName + "<br>" + sender.email + "</strong>"
                 }).then(
                     message => alert(message)
                 );
             }
-            // else {
-            //     alert('Please fill required sections');
-            // }
         };
-        // show = () => {
-        //     circle.style.display = "flex";
-        // }
-        // closeImg = () => {
-        //     circle.style.display = "none";
-        // }
     </script>
 
     <!-- CURSOR -->

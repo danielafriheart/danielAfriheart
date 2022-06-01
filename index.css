@@ -4,53 +4,54 @@
     scroll-behavior: smooth !important;
     /* border: 1px solid gold; */
 }
-.brands{
+
+.brands {
     border-radius: 1em !important;
     background-color: white;
 }
-.fw-bold{
+
+.fw-bold {
     font-weight: 900 !important;
     font-family: 'Roboto', sans-serif !important;
-
 }
-p, nav{
+
+p,
+nav {
     font-family: 'Libre Franklin', sans-serif !important;
 }
-.hero{
+
+.hero {
     position: relative;
     z-index: 2;
 }
-/* .collapse{
-    justify-content: end;
-} */
-.btn{
+
+.btn {
     padding: 0.7em;
     color: white !important;
-    background-image:  linear-gradient(135deg,#8254e5,#83afe3 150%);;
+    background-image: linear-gradient(135deg, #8254e5, #83afe3 150%);
+    ;
     border: none;
 }
-.btn2{
-    background-image: linear-gradient(135deg,#72e9f3 -20%,#404de6 120%);
+
+.btn2 {
+    background-image: linear-gradient(135deg, #72e9f3 -20%, #404de6 120%);
 }
-.btn:hover{
+
+.btn:hover {
     font-weight: bold !important;
     color: white !important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
 }
-.quoteLink:hover{
+
+.quoteLink:hover {
     color: white !important;
 }
-/* .nav2{
-    background-color: white;
-    z-index: -1;
-} */
-/* .hero{
-    z-index: 20;
-} */
-.top{
+
+.top {
     z-index: 1;
 }
-#toTop:hover{
+
+#toTop:hover {
     transform: translateZ(20);
     transform: scale(5%) !important;
     transition: 0.5s all ease-in-out !important;
@@ -61,8 +62,8 @@ p, nav{
     position: absolute;
     top: 0;
     left: 0;
-    /* border: 2px solid lightgray; */
-    /* background-color: rgba(255, 255, 255, 0.356); */
+    border: 2px solid lightgray;
+    background-color: rgba(255, 255, 255, 0.356);
     height: 30px;
     width: 30px;
     border-radius: 50px;
@@ -107,7 +108,8 @@ p, nav{
 body {
     background-color: #fff;
 }
-::placeholder{
+
+::placeholder {
     color: lightgray !important;
 }
 
@@ -185,7 +187,8 @@ section {
     .words {
         width: 100% !important;
     }
-    .socials{
+
+    .socials {
         width: 50% !important;
     }
 }
