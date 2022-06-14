@@ -1,13 +1,18 @@
 * {
     /* border: 1px solid gold; */
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Caudex', serif;
 }
-.fw-bold{
+/* 
+.fw-bold {
     font-weight: 900 !important;
-}
-p, li{
+} */
+
+p,
+li {
     font-family: 'Libre Franklin', sans-serif !important;
 }
+
 .mouseIcon:hover {
     font-weight: bold;
 }

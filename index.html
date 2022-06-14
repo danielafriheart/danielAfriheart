@@ -8,7 +8,7 @@
     <!-- Font 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font 2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,27 +21,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-
     <!-- IconScout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/img/memoji.png">
-
+    <link rel="icon" type="image/x-icon" href="/img/memoj.png">
     <!-- Animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DanielAfriheart</title>
 </head>
 
-<body>
+<body class=" px-0 bg-light">
     <div class="cursor"></div>
 
     <!-- HERO -->
-    <section class="container-fluid hero" id="home"
-        style="background-image: url(/img/bg1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        <nav class="navbar navbar-expand-lg text-light navbar-dark px-md-5">
-            <div class="container mx-md-5 px-md-5">
-                <a class="navbar-brand fw-bold nav-link nav-item" href="#">DanielAfriheart</a>
+    <section class="container-fluid hero px-0" id="home">
+        <nav class="navbar fixed-top bg-light navbar-expand-lg text-dark shadow shadow-sm navbar-light align-items-center px-0">
+            <div class="container">
+                <a class="navbar-brand fw-bold nav-link nav-item" href="#"> Esuola Daniel</a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +50,9 @@
                             <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/pages/resume.html">Résumé</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#quote">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -62,8 +61,8 @@
                                 Resources
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf"
-                                        target="_blank">Resume</a></li>
+                                <li><a class="dropdown-item" href="/MyResume/Esuola daniel.pdf" target="_blank">Résumé
+                                        (PDF)</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -71,24 +70,17 @@
             </div>
         </nav>
 
-        <div class=" container-fluid d-flex flex-column justify-content-center align-items-center h-100 content">
-            <div class="container text-light">
-                <div class="row">
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="img/memoji.png" alt="" class="img-fluid" onmouseover="show()"
-                            onmouseleave="closeImg()">
-
-                    </div>
+        <div
+            class=" container-fluid d-flex flex-column justify-content-center align-items-center h-100 content mb-5 pb-5">
+            <div class="container">
+                <div class="row align-items-center">
                     <div class="col-md-7">
-                        <h4 class=" fw-bold" style="color: #8B8CB3;">Product Designer</h4>
-                        <h1 class="fw-bolder display-1">Hello there, I’m <strong class="">Esuola Daniel</strong>, glad
-                            to see you
-                            here.</h1>
+                        <h1 class="fw-bolder display-1">Hello! I'm DANIEL </h1>
+                        <!-- <h1 class="fw-bolder display-1">ESUOLA DANIEL.</h1> -->
+                        <p class="lead">Creative Director of DanielAfriheart</p>
                         <div class="w-25 fs-4 align-items-center justify-content-between d-flex socials">
                             <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
                                     class="uil uil-twitter-alt"></i></a>
-                            <!-- <a href="https://www.instagram.com/danielafriheart/" target="_blank" class=""><i
-                                    class="uil uil-instagram text"></i></a> -->
                             <a href="https://www.linkedin.com/in/daniel-esuola/" target="_blank" class=""><i
                                     class="uil uil-linkedin-alt text"></i></a>
                             <a href="https://github.com/DanieAfriheart" target="_blank" class=""> <i
@@ -97,86 +89,101 @@
                                     class="uil uil-behance"></i></a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- ABOUT ME -->
-    <div class=" d-flex justify-content-center flex-column align-items-center my-md-5 pt-5 container-fluid" id="about">
-        <div class="container px-md-5 px-0 pt-md-3">
-            <div class="container ">
-                <div class="px-md-5 px-0 row">
-                    <div class="col-md-7">
-                        <h3 class="fw-bolder">About Me</h3>
-                        <p class="fs-5 lh-lg lead">My name is Esuola Daniel, i'm a Product Designer and a FrontEnd
-                            Developer.
-                            I design interactive human experiences that excites you and your customers.
-                        </p>
-                    </div>
-                    <div class="col d-none d-md-flex ">
-                    </div>
-                </div>
+    <div class="container-fluid" id="about">
+        <div class=" container mx-auto row px-0 py-5 my-5">
+            <div class="col ">
+                <!-- <i class="uil uil-angle-double-down display-1"></i> -->
+                <i class="uil uil-arrow-down display-1"></i>
             </div>
-        </div>
-        <div class="container-fluid my-md-5 pt-md-3">
-            <div class="container px-md-5 px-0">
-                <div class="row create text-center mx-md-5">
-                    <div class="col-6 col-md-3">
-                        <img src="/img/scribbles/setting.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="mt-3 text-muted fw-bold">CREATE</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <img src="/img/scribbles/image.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="mt-3 text-muted fw-bold">DESIGN</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <img src="/img/scribbles/puzzle.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="mt-3 text-muted fw-bold">DEVELOP</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <img src="/img/scribbles/rocket.png" alt="" class="img-fluid w-25 iconz">
-                        <p class="mt-3 text-muted fw-bold">INNOVATE</p>
-                    </div>
-                </div>
+            <div class="col">
+                <h3 class="fw-bolder display-1"> CREATIVE DEVELOPER</h3>
+                <p class="fs-5 lh-lg lead">My name is Esuola Daniel, a Product Designer, FrontEnd Developer &
+                    illustrator. I design interactive human experiences that excites you and your customers. <br>
+                    When i'm not building new web experiences, I'm probably painting or playing games.
+                </p>
             </div>
+
         </div>
     </div>
+    <!-- Skills -->
+    <!-- <div class="container-fluid py-md-5 my-md-5 ">
+        <div class="container row mx-auto px-0 align-items-center">
+            <div class="row create mx-auto container px-0 align-items-center justify-content-center text-center">
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/figma.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/html.jpg" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/css.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/bootstrap.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/js.jpg" alt="" class="img-fluid w-25 iconz">
+                </div>
+            </div>
+
+            <div
+                class="row create mx-auto container px-0 align-items-center justify-content-center text-center mt-5 gap-5">
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/vzcode.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/Word.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/photoshop.png" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/zoom.jpg" alt="" class="img-fluid w-25 iconz">
+                </div>
+                <div class="col-6 col-md">
+                    <img src="/img/scribbles/chrome.jpg" alt="" class="img-fluid w-25 iconz">
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <!-- FROM SMALL TO BIG CLIENTS -->
-    <div class="text-dark d-flex flex-column justify-content-center py-5 my-md-5 align-items-center">
-        <div class="container px-md-5 px-4">
-            <div class="mb-3 text-center px-md-5 text-md-start">
-                <h3 class="fw-bold text-start">Two things I promise:</h3>
+    <div class="text-dark py-5 container">
+        <h3 class="fw-bold text-muted">Promise</h3>
+        <h3 class="fw-bold text-start display-1">Two things I promise</h3>
+        <div class="row gap-md-5 pt-md-5">
+            <div class="col-md-6 mb-md-0 mb-5">
+                <header class="d-flex align-items-center">
+                    <h1 class="fw-bold me-2">1-</h1>
+                    <h4 class="fw-bold"> Designs you will love</h4>
+                </header>
+                <p class="lead lh-lg">This is what I love to do, so I’ll make sure you are happy with the results.
+                    We’ll work as a team and we’ll get there!</p>
+                <div class="pt-5">
+                    <a href="#quote" target="" class="btn btn-outline-dark px-3 shadow shadow-sm">Get a Quote</a>
+                </div>
             </div>
-            <div class="row gap-md-5 px-md-5">
-                <div class="col-md-6 py-md-3 mb-5 mb-md-0">
-                    <header class="d-flex align-items-center">
-                        <h1 class="text-warning fw-bold me-2">1</h1>
-                        <h4 class="fw-bold"> Designs you will love</h4>
-                    </header>
-                    <p class="lead lh-lg">This is what I love to do, so I’ll make sure you are happy with the results.
-                        We’ll work as a team and we’ll get there!</p>
-                    <div class="py-3">
-                        <a href="#quote" target="" class="btn rounded-pill px-5 shadow">Get a Quote</a>
-                    </div>
-                </div>
-                <div class="col py-md-3">
-                    <header class="d-flex align-items-center">
-                        <h1 class="text-warning fw-bold me-2">2</h1>
-                        <h4 class="fw-bold">A healthy freelance relationship</h4>
-                    </header>
-                    <p class="lead lh-lg"> No dramas or difficult relationships. I'm here to make your life easier,
-                        solve problems and help you grow your business.</p>
-                </div>
+            <div class="col">
+                <header class="d-flex align-items-center">
+                    <h1 class=" fw-bold me-2">2-</h1>
+                    <h4 class="fw-bold">A healthy freelance relationship</h4>
+                </header>
+                <p class="lead lh-lg"> No dramas or difficult relationships. I'm here to make your life easier,
+                    solve problems and help you grow your business.</p>
             </div>
         </div>
     </div>
 
     <!-- CLIENTS -->
-    <div class="container-fluid d-none d-md-block">
-        <div class="container w-75 mx-auto row align-items-center gap-3">
+    <div class="container-fluid d-none d-md-block w-75" style="opacity: 100% !important;">
+        <div class="container mx-auto row align-items-center gap-3">
             <div class="col align-items-center text-center p-3 rounded-5 rounded brands">
                 <img src="/img/brands/logo1.png" alt="" class="img-fluid">
             </div>
@@ -263,157 +270,116 @@
         </div> -->
 
     <!-- LESS TALK MORE DESIGNS -->
-    <div class="container-fluid px-md-5 my-md-5 py-md-5" id="designs">
-        <div class="row ps-md-5">
-            <div class="container ps-md-4 col-md-8">
-                <header class="container d-flex flex-column ps-md-5">
-                    <div class="px-md-5 px-0 text-center text-md-start">
-
-                        <h2 class="fw-bolder text-muted">Less Talk,</h2>
-                        <h2 class="fw-bolder">More Designs.</h2>
-                        <p class="lh-lg lead">It’s time to see some work. Here are a few projects, pitch work and
-                            design explorations I’ve done for clients. Not everything but a sneak peek.
-                        </p>
-                    </div>
-                </header>
+    <div class="container mx-auto py-5">
+        <div class="row align-items-center">
+            <div class="col-md-7 text-center text-md-start">
+                <h2 class="fw-bold text-muted">Less Talk, More Designs</h2>
+                <h2 class="fw-bold display-1">Recent Projects</h2>
+                <p class="lead lh-lg">It’s time to see some work. Here are a few projects, pitch work and design
+                    explorations I’ve done for
+                    clients. Not everything but a sneak peek.</p>
             </div>
-            <div class="px-md-4 col text-md-start text-center">
-                <img src="img/idea.png" alt="" class="img-fluid w-50">
+            <div class="col d-none d-md-flex text-md-end text-center">
             </div>
         </div>
-        <div class="container px-0">
-            <div class="container px-0">
-                <div class="container text-center">
-                    <div class="row mt-3">
-                        <div class="col-md-8">
-                            <img src="/img/web/buskie.png" alt="" class="img-fluid w-100">
-                        </div>
-                        <div class="col-md-4"
-                            style="background-image: url(/img/web/Buskie-main.png); background-size: cover; ">
-                        </div>
+        <!-- Portfolio works -->
+        <!-- Row 1 -->
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card shadow shadow-sm w-100" style="width: 18rem;">
+                    <img src="/img/web/`landing.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">Landing</h5>
+                            <p class="card-text">Landing page shots</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row mt-3">
-                        <div class="col-md-4"
-                            style="background-image: url(/img/web/desctop-view.png); background-size: cover;">
-                        </div>
-                        <div class="col-md-8">
-                            <img src="/img/web/Untitled-1.png" alt="" class="img-fluid w-100">
-                        </div>
+            <div class="col-md-4 my-md-0 my-5">
+                <div class="card shadow shadow-sm w-100" style="width: 18rem;">
+                    <img src="/img/web/ilearn-thumb.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">iLearn</h5>
+                            <p class="card-text"> Landing Page for Institution</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row mt-3">
-                        <div class="col-md-8 d-flex">
-                            <img src="/img/web/workfolio-thumb.png" alt="" class="img-fluid">
-                            <!-- <div class="my-5">
-                                <a href="https://www.upwork.com/freelancers/~018c66501e36bcd92d" target="_blank"
-                                    class="btn btn-dark rounded-pill px-5 shadow">Hire</a>
-                            </div> -->
-                        </div>
-                        <div class="col-md-4"
-                            style="background-image: url(/img/web/workfolio.png); background-size: cover;">
-                        </div>
-                    </div>
-
-                    <!-- Row 1 -->
-                    <!-- <div class="row mt-3">
-                        <div class="col">
-                            <img src="/img/web/Dre.png" alt="" class="img-fluid">
-                        </div>
-                    </div> -->
-
-                    <!-- Row 2 -->
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img src="/img/graphics/fx2.png" alt="" class="img-fluid">
-
-                            <div class="row mt-3">
-                                <div class="col-md-6">
-                                    <img src="/img/graphics/y3.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/y2.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/fx3.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/fx1.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <img src="/img/graphics/y1.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row 3 -->
-                    <!-- <div class="row mt-3 d-none d-md-block">
-                        <div class="col">
-                            <img src="/img/web/iWallet2.jpeg" alt="" class="img-fluid">
-                        </div>
-                    </div> -->
-
-                    <!-- Row 4 -->
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img src="/img/graphics/help.png" alt="" class="img-fluid">
-
-                            <div class="row mt-3">
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/the remake.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/af3.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/help shirt.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <img src="/img/graphics/af1.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <img src="/img/graphics/af2.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Row 5 -->
-                    <!-- <div class="row mt-3 d-none d-md-block">
-                        <div class="col">
-                            <img src="/img/web/pizzaHouse2.png" alt="" class="img-fluid">
-                        </div>
-                    </div> -->
-
-                    <div class="d-flex justify-content-end mt-3">
-                        <a href="/pages/resume.html" class="mouseIcon text-dark fs-5"><i
-                                class="uil uil-arrow-right border border-dark rounded-pill px-2 border-2 text-darkfs-4 fw-bolder mt-5"></i>
-                            Resume</a>
-                    </div>
-                    <div class="text-start mt-5">
-                        <h3 class="fw-bold"> Want to see more?</h3>
-                        <p class="lead lh-lg">
-                            Check out my <a href="https://www.linkedin.com/in/daniel-esuola/" target="_blank"
-                                class="text-warning">Linkedin</a> to see more designs, projects <br> and things I’m
-                            currently working on.
-                        </p>
+            <div class="col-md-4">
+                <div class="card shadow shadow-sm w-100" style="width: 18rem;">
+                    <img src="/img/web/buskie.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">Buskie</h5>
+                            <p class="card-text">Conceptualized Pet store</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Row 2 -->
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="card shadow shadow-sm w-100" style="width: 18rem;">
+                    <img src="/img/web/Untitled-1.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">Minimal</h5>
+                            <p class="card-text">Furniture Website</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow shadow-sm w-100 my-md-0 my-5" style="width: 18rem;">
+                    <img src="/img/web/workfolio-thumb.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">Workfolio</h5>
+                            <p class="card-text">Resume Website</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow shadow-sm w-100" style="width: 18rem;">
+                    <img src="/img/web/iWallet1.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light flex-row d-flex justify-content-between align-items-center">
+                        <span>
+                            <h5 class="card-title fw-bold">iWallet</h5>
+                            <p class="card-text">Personal finance app</p>
+                        </span>
+                        <a href="#" class=" fs-5"><i class="uil uil-eye-slash"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Want more?? -->
+        <div>
+            <a href="/pages/resume.html" class="Lead fs-4 justify-content-end d-flex flex-row align-items-center text-dark"><i
+                class="uil uil-arrow-right border border-dark rounded-pill px-2 border-2 text-dark fs-5 fw-bolder my-5"></i>Résumé</a>
+        </div>
+        <div class="col-md-6 my-5">
+            <h2 class="fw-bold">Want to see more?</h2>
+            <p class="lead">
+                Check out my <a href="#" class="text-warning">Linkedin</a> to see more designs, projects
+                and things I’m currently working on.
+            </p>
+        </div>
     </div>
+
 
     <!-- WAYS I CAN HELP -->
     <!-- <div class="container-fluid justify-content-center d-flex flex-column my-md-5 pt-5">
@@ -455,58 +421,54 @@
     </div> -->
 
     <!-- CONTACT FORM -->
-    <div class="container-fluid px-md-5 py-5 mb-md-5 bg-light" id="quote">
-        <div class="container px-md-5 pt-md-5">
-            <div class="row ps-md-5 gap-5">
-                <div class="col-md-3 ps-md-4">
-                    <p class="fw-bold" style="color: #8B8CB3;">LET’S MAKE IT HAPPEN</p>
-                    <h2 class="fw-bold">Let's create the future!</h2>
-                    <p class="py-2 lh-lg">I'm available for commissions or collaborations, and I’m excited to hear from
-                        you about new projects.</p>
-                    <div class="w-50 fs-4 justify-content-between d-flex socialsLinks">
-                        <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
-                                class="uil uil-twitter-alt"></i></a>
-                        <!-- <a href="https://www.instagram.com/danielafriheart/" target="_blank" class=""><i
-                                class="uil uil-instagram text"></i></a> -->
-                        <a href="https://www.linkedin.com/in/daniel-esuola/" target="_blank" class=""><i
-                                class="uil uil-linkedin-alt text"></i></a>
-                        <a href="https://github.com/DanieAfriheart" target="_blank" class=""> <i
-                                class="uil uil-github text"></i></a>
-                        <a href="https://www.behance.net/danielAfriheart" target="_blank" class=""> <i
-                                class="uil uil-behance"></i></a>
+    <div class="container-fluid py-5 mb-md-5 bg-light" id="quote">
+        <div class="row gap-5 container mx-auto px-0">
+            <div class="col-md-3">
+                <p class="fw-bold" style="color: #8B8CB3;">LET’S MAKE IT HAPPEN</p>
+                <h2 class="fw-bold">Let's create the future!</h2>
+                <p class="py-2 lh-lg">I'm available for commissions or collaborations, and I’m excited to hear from
+                    you about new projects.</p>
+                <div class="w-50 fs-4 justify-content-between d-flex socialsLinks">
+                    <a href="https://twitter.com/DanielAfriheart" target="_blank" class=""><i
+                            class="uil uil-twitter-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-esuola/" target="_blank" class=""><i
+                            class="uil uil-linkedin-alt text"></i></a>
+                    <a href="https://github.com/DanieAfriheart" target="_blank" class=""> <i
+                            class="uil uil-github text"></i></a>
+                    <a href="https://www.behance.net/danielAfriheart" target="_blank" class=""> <i
+                            class="uil uil-behance"></i></a>
 
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form class="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-0" id="fName" aria-describedby="emailHelp"
+                            placeholder="First Name" required>
                     </div>
-                </div>
-                <div class="col-md-8 ps-md-5">
-                    <form class="">
-                        <div class="mb-3">
-                            <input type="text" class="form-control border-0" id="fName" aria-describedby="emailHelp"
-                                placeholder="First Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control border-0" id="lName" aria-describedby="emailHelp"
-                                placeholder="Last Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control border-0" id="senderEmail"
-                                placeholder="Your email address" required>
-                        </div>
-                        <select class="form-select mb-3 border-0" aria-label="Default select example" id="mailSubject"
-                            required>
-                            <option selected>- - -</option>
-                            <option value="Branding">Branding</option>
-                            <option value="Web Development">Web Development</option>
-                        </select>
-                        <div class="">
-                            <textarea name="" id="message" placeholder="Message" class="w-100 p-3 border-0"
-                                required></textarea>
-                        </div>
-                        <div class="text-end">
-                            <button type="submit" class="btn btn2 btn-primary mt-3 px-5 rounded-pill"
-                                onclick="sendEmail()">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-0" id="lName" aria-describedby="emailHelp"
+                            placeholder="Last Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control border-0" id="senderEmail"
+                            placeholder="Your email address" required>
+                    </div>
+                    <select class="form-select mb-3 border-0" aria-label="Default select example" id="mailSubject"
+                        required>
+                        <option selected>- - -</option>
+                        <option value="Branding">Branding</option>
+                        <option value="Web Development">Web Development</option>
+                    </select>
+                    <div class="">
+                        <textarea name="" id="message" placeholder="Message" class="w-100 p-3 border-0"
+                            required></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn2 btn-primary mt-3 px-4"
+                            onclick="sendEmail()">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -554,7 +516,8 @@
                 fullName: fName.value + " " + lName.value,
                 email: senderEmail.value
             };
-            if (fName.value && lName.value && senderEmail && mailSubject.value && message.value) {
+            let mailAuthentication = fName.value && lName.value && senderEmail && mailSubject.value && message.value;
+            if (mailAuthentication) {
                 Email.send({
                     SecureToken: "7bccf054-a3dc-4f3b-b348-949365863da1",
                     To: 'designsbydanielafriheart@gmail.com',
@@ -562,8 +525,18 @@
                     Subject: sender.fullName + "- " + mailSubject.value,
                     Body: message.value + "<br> From: <br>" + "<strong>" + sender.fullName + "<br>" + sender.email + "</strong>"
                 }).then(
-                    message => alert(message)
+                    message => alert("Mail Sent Successfully!"),
                 );
+                if (message) {
+                    console.log('message sent');
+                    setTimeout(() => {
+                        fName.value = ""
+                        lName.value = ""
+                        senderEmail.value = ""
+                        mailSubject.value = "- - -"
+                        message.value = ""
+                    }, 1000)
+                }
             }
         };
     </script>

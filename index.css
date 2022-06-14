@@ -1,23 +1,27 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     cursor: none !important;
     scroll-behavior: smooth !important;
+    font-family: 'Caudex', serif;
     /* border: 1px solid gold; */
 }
 
 .brands {
     border-radius: 1em !important;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .fw-bold {
     font-weight: 900 !important;
-    font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: 'Caudex', serif !important;
+
 }
 
 p,
 nav {
     font-family: 'Libre Franklin', sans-serif !important;
+    /* font-family: 'Caudex', serif !important; */
 }
 
 .hero {
@@ -25,25 +29,30 @@ nav {
     z-index: 2;
 }
 
-.btn {
+/* .btn {
     padding: 0.7em;
     color: white !important;
     background-image: linear-gradient(135deg, #8254e5, #83afe3 100%);
     border: none;
-}
+} */
 
 .btn2 {
     background-image: linear-gradient(135deg, #72e9f3 -20%, #404de6 120%);
+}
+
+/* .btn:hover {
+    background-color: transparent;
+    color: #000;
 }
 
 .btn:hover {
     font-weight: bold !important;
     color: white !important;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
-}
+} */
 
 .quoteLink:hover {
-    color: white !important;
+    color: black !important;
 }
 
 .top {
@@ -56,7 +65,7 @@ nav {
     top: 0;
     left: 0;
     border: 2px solid lightgray;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.256);
     height: 30px;
     width: 30px;
     border-radius: 50px;
@@ -71,7 +80,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000;
+    background-color: black;
     height: 10px;
     width: 10px;
     border-radius: 50px;
@@ -110,9 +119,8 @@ textarea {
     outline: none;
 }
 
-.btn:hover {
-    background-color: transparent;
-    color: #000;
+.text-muted{
+    color: lightgray !important;
 }
 
 ul {
@@ -141,19 +149,19 @@ ul {
 }
 
 .socials a {
-    color: #8B8CB3;
-}
-
-.socials a:hover {
-    color: #fff;
+    color: #909090;
 }
 
 .socialsLinks a {
-    color: #8B8CB3;
+    color: #909090;
+}
+
+.socials a:hover {
+    color: #333;
 }
 
 .socialsLinks a:hover {
-    color: #000;
+    color: #333;
 }
 
 .mouseIcon:hover {
@@ -161,7 +169,8 @@ ul {
 }
 
 section {
-    height: 100vh;
+    padding-top: 15em;
+    /* height: 80vh; */
 }
 
 @media (min-width:320px) and (max-width: 612px) {
