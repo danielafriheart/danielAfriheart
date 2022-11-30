@@ -1,7 +1,7 @@
 ### Hi there 👋, my name is Daniel
 #### Front End Developer
-![Front End Developer](https://i.pinimg.com/564x/b0/63/ad/b063adfbd56fff5657909a952318bdf7.jpg)
-
+[![Front End Developer]
+](https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 Passionate about web technologies, and building interactive web experiences.. I love working at the intersection of creativity and user-friendly interfaces. I create memorable web experiences.
 
 
