@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Daniel Esuola</h1>
 <h3 align="center">A passionate frontend developer from Nigeria. Passionate about web technologies, building interactive web experiences.. I love working at the intersection of creativity and user-friendly interfaces. I create memorable web experiences.</h3>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=danielafriheart&show_icons=true&locale=en&layout=compact" alt="danielafriheart" /></p> <br>
+<p><img align="left" src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="danielafriheart" /></p> <br>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
