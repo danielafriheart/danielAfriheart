@@ -22,7 +22,7 @@ Started in 2021, haven't stopped since.
 |  |  |
 |---|---|
 | **6,500+ users** | on Provolo — an AI platform I co-founded and led engineering on (architecture, UX, backend, product) |
-| **300+ students** | taught — I understand how people learn and use interfaces |
+| **300+ students** | mentored — I understand how people learn and use interfaces |
 | **15–30% efficiency gains** | delivered via better UI in a B2B sales analytics tool |
 
 ---
